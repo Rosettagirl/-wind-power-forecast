@@ -1,0 +1,11 @@
+.venv/
+.idea/
+.claude/
+node_modules/
+data/
+__pycache__/
+*.pyc
+submission.csv
+model_summary.json
+package-lock.json
+package.json

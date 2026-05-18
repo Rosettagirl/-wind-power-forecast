@@ -1,0 +1,55 @@
+{
+  "lightgbm": {
+    "params": {
+      "num_leaves": 113,
+      "max_depth": 3,
+      "learning_rate": 0.021593453536789528,
+      "subsample": 0.9321801256413894,
+      "colsample_bytree": 0.8806093883670616,
+      "reg_lambda": 6.05397731385219,
+      "reg_alpha": 4.638151608980967,
+      "min_child_samples": 20
+    },
+    "best_iteration": 1477,
+    "best_mae": 8.03336799549978,
+    "n_trials": 30
+  },
+  "xgboost": {
+    "params": {
+      "max_depth": 4,
+      "learning_rate": 0.059690940256002294,
+      "subsample": 0.8112788724493492,
+      "colsample_bytree": 0.7932493206139636,
+      "reg_lambda": 0.01829700475500906,
+      "reg_alpha": 1.5842130307075126,
+      "min_child_weight": 4.285466277137358
+    },
+    "best_iteration": 279,
+    "best_mae": 8.064752320714087,
+    "n_trials": 30
+  },
+  "catboost": {
+    "params": {
+      "depth": 6,
+      "learning_rate": 0.013631930152770476,
+      "l2_leaf_reg": 10.126715049511354,
+      "random_strength": 2.8546852826361366,
+      "bagging_temperature": 0.8459603463561457
+    },
+    "best_iteration": 2500,
+    "best_mae": 8.043712119252056,
+    "n_trials": 15,
+    "note": "killed early; trial 1 was best so far"
+  },
+  "tcn_disabled": {
+    "params": {
+      "epochs": 20,
+      "batch": 128,
+      "lr": 0.00057534367344446,
+      "dropout": 0.18548091092046004
+    },
+    "best_mae": 8.258345260380516,
+    "n_trials": 20,
+    "note": "tuned on Q1/2025 only, overfits — LB regressed 8.572 -> 8.616. Reverted to defaults (epochs=30, batch=256, lr=1e-3, dropout=0.15)."
+  }
+}
