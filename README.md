@@ -133,10 +133,5 @@ python solution.py
   меняться из-за разной реализации свёрток на GPU.
 - При запуске тюнинга через `optuna_*_multifold.py` сидируется TPESampler,
   поэтому Optuna-эксперименты повторяемы.
-## Hub Height Check
 
-Update 2026-05-14: checked minimum rotor / hub height 84 m as `hub_speed_84m`:
 
-```text
-V84 = V80 + 0.1 * (V120 - V80)
-```
