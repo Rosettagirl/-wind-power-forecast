@@ -143,7 +143,3 @@ Update 2026-05-14: checked minimum rotor / hub height 84 m as `hub_speed_84m`:
 ```text
 V84 = V80 + 0.1 * (V120 - V80)
 ```
-
-Fast Q1/2025 CatBoost/LightGBM test showed degradation versus the existing
-feature set, so `hub_speed_84m` is not included in the active production
-pipeline. The check is saved in `quick_hub84_report.json`.
